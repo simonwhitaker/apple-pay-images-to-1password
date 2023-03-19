@@ -3,7 +3,7 @@
 const img = sips.images[0];
 const w = img.size.width;
 const h = img.size.height;
-const cornerRadius = 80;
+const cornerRadius = Math.floor(img.size.width / 20);
 const vPadding = Math.floor((w - h) / 2);
 const rectTop = vPadding;
 const rectBottom = vPadding + h;
