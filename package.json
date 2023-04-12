@@ -1,0 +1,9 @@
+{
+  "name": "apple-pay-images-to-1password",
+  "version": "1.0.0",
+  "main": "process.js",
+  "scripts": {},
+  "devDependencies": {
+    "eslint": "^8.38.0"
+  }
+}
