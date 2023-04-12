@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for img in ~/Library/Passes/Cards/*.pkpass/cardBackgroundCombined@2x.png; do
+    pass=$(dirname "$img")/pass.json
+    suffix=$(jq -r '.primaryAccountSuffix' "$pass")
+    bank=$(jq -r '.organizationName' "$pass")
+    sips --js process.js "$img" -o ~/Desktop/"$bank ($suffix).png"
+done
